@@ -1,0 +1,16 @@
+linters-settings:
+  custom:
+    godoxwithregexp:
+      # Path is required
+      path: godoxwithregexp.so
+      # Description is optional
+      description: The description of the linter. This is optional, but shows up when running `golangci-lint linters`.
+      # Original-url is optional, and is only used for documentation purposes.
+      original-url: github.com/SilverdewBaker/godox-with-regexp
+
+linters:
+  disable-all: true
+  enable:
+    - godoxwithregexp
+    # Typecheck is how golangci-lint reports compile errors, so should always be enabled.
+    - typecheck
