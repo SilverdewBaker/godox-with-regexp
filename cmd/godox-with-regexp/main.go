@@ -1,3 +1,4 @@
+// +gocover:ignore:file analyzer entrypoint
 package main
 
 import (
