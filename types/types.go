@@ -9,23 +9,10 @@ type Message struct {
 }
 
 type GoDoxSettings struct {
-	FormatRules []GoDoxFormatRule `yaml:"format-rules,omitempty"`
+	FormatRules []GoDoxFormatRule
 }
 
 type GoDoxFormatRule struct {
-	Keyword           string `yaml:"keyword,omitempty"`
-	RegularExpression string `yaml:"regularExpression,omitempty"`
-}
-
-type YamlSettings struct {
-	LintersSettings struct {
-		Custom struct {
-			Godoxwithregexp struct {
-				Path        string        `yaml:"path,omitempty"`
-				Description string        `yaml:"description,omitempty"`
-				OriginalURL string        `yaml:"original-url,omitempty"`
-				Settings    GoDoxSettings `yaml:"settings,omitempty"`
-			} `yaml:"godoxwithregexp,omitempty"`
-		} `yaml:"custom,omitempty"`
-	} `yaml:"linters-settings,omitempty"`
+	Keyword           string
+	RegularExpression string
 }
