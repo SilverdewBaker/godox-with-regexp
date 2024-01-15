@@ -18,9 +18,6 @@ import (
 	"silverdewbaker/todo-with-regexp/types"
 )
 
-// TODO bad example
-// TODO(12345678) good example
-
 // Analyzer is an Analyzer for checking keyword comment format.
 var Analyzer = &analysis.Analyzer{
 	Name:     "godoxwithregexp",
