@@ -4,7 +4,7 @@ go 1.21.4
 
 require (
 	github.com/tj/assert v0.0.3
-	golang.org/x/tools v0.16.1
+	golang.org/x/tools v0.17.0
 )
 
 require (
