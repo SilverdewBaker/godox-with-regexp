@@ -2,20 +2,10 @@
 package main
 
 import (
-	"golang.org/x/tools/go/analysis"
-
-	"silverdewbaker/todo-with-regexp/analyzer"
+	"github.com/SilverdewBaker/godox-with-regexp/internal/godoxwithregexp"
+	"golang.org/x/tools/go/analysis/singlechecker"
 )
 
-// This struct must be defined
-type analyzerPlugin struct{}
-
-// This must be defined and named 'AnalyzerPlugin'
-var AnalyzerPlugin analyzerPlugin
-
-// This must be implemented
-func New(conf any) ([]*analysis.Analyzer, error) {
-	return []*analysis.Analyzer{
-		analyzer.Analyzer,
-	}, nil
+func main() {
+	singlechecker.Main(godoxwithregexp.Analyzer)
 }

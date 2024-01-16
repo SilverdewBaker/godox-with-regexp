@@ -1,24 +1,15 @@
-# User Handbook
+# godox-with-regexp
 
-## Build
-`go build -buildmode=plugin -o godoxwithregexp.so cmd/godox-with-regexp/main.go`
+An opinionated Go code linter for detecting TODO and other comment keywords with regular expression.
 
-## Linter Settings
-```yaml
-linters-settings:
-  custom:
-    godoxwithregexp:
-      # Path is required
-      path: godoxwithregexp.so
-      # Description is optional
-      description: Tool for detection of TODO and other comment keywords with regular expression.
-      # Original-url is optional, and is only used for documentation purposes.
-      original-url: github.com/SilverdewBaker/godox-with-regexp
+## Installation
 
-linters:
-  enable:
-    - godoxwithregexp
+```
+$ go install github.com/SilverdewBaker/godox-with-regexp@latest
 ```
 
-## Run
-`golangci-lint run`
+## Usage
+
+```
+$ godox-with-regexp ./...
+```
