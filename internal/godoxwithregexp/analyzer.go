@@ -11,10 +11,11 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/SilverdewBaker/godox-with-regexp/types"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
+
+	"github.com/SilverdewBaker/godox-with-regexp/types"
 )
 
 // Analyzer is an Analyzer for checking keyword comment format.

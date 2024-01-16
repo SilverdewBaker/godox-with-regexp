@@ -5,7 +5,7 @@ An opinionated Go code linter for detecting TODO and other comment keywords with
 ## Installation
 
 ```
-$ go install github.com/SilverdewBaker/godox-with-regexp@latest
+$ go install github.com/SilverdewBaker/godox-with-regexp/cmd/godox-with-regexp@lastest
 ```
 
 ## Usage
